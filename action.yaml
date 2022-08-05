@@ -1,15 +1,15 @@
 name: issue-to-hugo-post
 description: Download and push the specific labeled issue
 inputs:
-  REPO_OWNER:
+  OWNER:
     required: true
     description: owner of the repo can be either user or organization
 
-  REPO_NAME:
+  NAME:
     required: true
     description: the name of the repository
 
-  PUBLISH_DIR:
+  PUB_DIR:
     required: true
     description: hugo publish directory which data will download there
 

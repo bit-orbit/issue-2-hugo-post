@@ -1,0 +1,25 @@
+name: issue-to-hugo-post
+description: Download and push the specific labeled issue
+inputs:
+  REPO_OWNER:
+    required: true
+    description: owner of the repo can be either user or organization
+
+  REPO_NAME:
+    required: true
+    description: the name of the repository
+
+  PUBLISH_DIR:
+    required: true
+    description: hugo publish directory which data will download there
+
+  DEBUG:
+    required: false
+    description: set to True to be verbose
+
+runs:
+  using: composite
+  steps:
+    - name: download and post
+      run: main.py
+      shell: python

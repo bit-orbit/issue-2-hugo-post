@@ -3,6 +3,8 @@ from os.path import join
 import os
 
 
+DEBUG = os.environ.get('DEBUG') if os.environ.get('DEBUG') else False
+
 DOMAIN = 'github.com'
 
 REPO_OWNER = os.environ.get('OWNER')

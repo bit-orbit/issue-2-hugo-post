@@ -5,7 +5,7 @@ inputs:
     required: true
     description: owner of the repo can be either user or organization
 
-  NAME:
+  REPO:
     required: true
     description: the name of the repository
 

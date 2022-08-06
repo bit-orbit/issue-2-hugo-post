@@ -8,6 +8,7 @@ class Issue():
         self.state = None
         self.created_at = None
         self.body = None
+        self.get_issue_context()
 
     def get_issue_context(self):
         self.url = self.issue.get('url')

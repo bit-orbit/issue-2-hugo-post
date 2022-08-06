@@ -16,7 +16,6 @@ if __name__ == '__main__':
 
     for i in data.json():
         issue = Issue(i)
-        issue.get_issue_context()
         print(f'founded labels are: {issue.labels}, saving data') if config.DEBUG else ...
         with open(f'{config.PUBLISH_DIR}/{issue.title}.md', 'w') as fli:
             fli.write(issue.body)

@@ -17,6 +17,7 @@ if __name__ == '__main__':
     for i in data.json():
         issue = Issue(i)
         print(f'founded labels are: {issue.labels}, saving data') if config.DEBUG else ...
-        with open(f'{config.PUBLISH_DIR}/{issue.title}.md', 'w') as fli:
-            fli.write(issue.body)
-            print(f'data saved') if config.DEBUG else ...
+        if config.ISSUES_LABEL in issue.labels:
+            with open(f'{config.PUBLISH_DIR}/{issue.title}.md', 'w') as fli:
+                fli.write(issue.body)
+                print(f'data saved') if config.DEBUG else ...

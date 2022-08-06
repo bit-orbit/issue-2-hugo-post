@@ -20,6 +20,9 @@ inputs:
 runs:
   using: composite
   steps:
+    - name: setup python
+      uses: actions/setup-python@v2
+
     - name: download and post
-      run: main.py
-      shell: python
+      run: python main.py
+      shell: bash

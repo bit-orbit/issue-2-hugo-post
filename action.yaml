@@ -20,9 +20,7 @@ inputs:
 runs:
   using: composite
   steps:
-    - name: setup python
-      uses: actions/setup-python@v2
-
+    - uses: actions/setup-python@v2
     - run: echo "${{ github.action_path }}" >> $GITHUB_PATH
       shell: bash
     - run: pip3 install -r requirements.txt

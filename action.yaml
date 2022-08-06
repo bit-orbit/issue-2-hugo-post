@@ -25,7 +25,5 @@ runs:
 
     - run: echo "${{ github.action_path }}" >> $GITHUB_PATH
       shell: bash
-
-    - name: download and post
-      run: python main.py
+    - run: python main.py
       shell: bash

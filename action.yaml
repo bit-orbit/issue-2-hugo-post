@@ -28,6 +28,14 @@ runs:
       shell: bash
     - run: echo "${{ github.action_path }}" >> $GITHUB_PATH
       shell: bash
+    - run: export REPO = ${{ inputs.REPO }}
+      shell: bash
+    - run: export OWNER = ${{ inputs.OWNER }}
+      shell: bash
+    - run: export PUB_DIR = ${{ inputs.PUB_DIR }}
+      shell: bash
+    - run: export DEBUG = ${{ inputs.DEBUG }}
+      shell: bash
     - run: main.py
       shell: bash
 

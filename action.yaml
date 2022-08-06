@@ -23,7 +23,7 @@ runs:
     - uses: actions/setup-python@v2
     - run: echo runing
       shell: bash
-    - id: the testing id
+    - id: the-testing-id
       run: echo this is to test
       shell: bash
     - run: echo "${{ github.action_path }}" >> $GITHUB_PATH

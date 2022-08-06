@@ -16,3 +16,5 @@ PUBLISH_DIR = os.environ.get('PUB_DIR')
 REPO_API = join(f'https://api.{DOMAIN}', 'repos', REPO_OWNER, REPO_NAME, 'issues')
 
 REPO_ADDR = join(f'https://{DOMAIN}', REPO_OWNER, REPO_NAME)
+
+ISSUES_LABEL = os.environ.get('LABELS').split(':')

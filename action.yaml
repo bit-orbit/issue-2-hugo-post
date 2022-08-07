@@ -39,5 +39,6 @@ runs:
         OWNER: ${{ inputs.OWNER }}
         PUB_DIR: ${{ inputs.PUB_DIR }}
         DEBUG: ${{ inputs.DEBUG }}
+        LABELS: ${{ inputs.LABELS }}
 
 

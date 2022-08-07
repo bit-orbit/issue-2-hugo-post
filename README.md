@@ -78,6 +78,7 @@ jobs:
           OWNER: 'shabane'
           PUB_DIR: 'content'
           DEBUG: True # verbose if True, otherwise quiet. default to False
+          LABELS: 'post:blog'
 
       - name: setup hugo
         uses: peaceiris/actions-hugo@v2

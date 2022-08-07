@@ -17,6 +17,10 @@ inputs:
     required: false
     description: set to True to be verbose
 
+  LABELS:
+    required: true
+    description: colon seprated list of labels which should download
+
 runs:
   using: composite
   steps:

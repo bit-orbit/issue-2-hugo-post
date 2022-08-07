@@ -74,9 +74,9 @@ jobs:
 
       - uses: bit-orbit/issue-2-hugo-post@master
         with:
-          REPO: 'test'
-          OWNER: 'shabane'
-          PUB_DIR: 'content'
+          REPO: 'repo name'
+          OWNER: '<repo owner>'
+          PUB_DIR: '<publish directory>' # blog contents saves here 
           DEBUG: True # verbose if True, otherwise quiet. default to False
           LABELS: 'post:blog'
 
